@@ -6,25 +6,6 @@ using System.Net;
 
 namespace Solaroid {
 
-    public class ConsoleSpiner {
-        private int counter;
-
-        public ConsoleSpiner() {
-            counter = 0;
-        }
-
-        public void Turn() {
-            counter++;
-            switch (counter % 4) {
-                case 0: Console.Write("/"); break;
-                case 1: Console.Write("-"); break;
-                case 2: Console.Write("\\"); break;
-                case 3: Console.Write("|"); break;
-            }
-            Console.SetCursorPosition(Console.CursorLeft - 1, Console.CursorTop);
-        }
-    }
-
     internal class Program {
 
         private static void Main(string[] args) {
@@ -56,22 +37,20 @@ namespace Solaroid {
                 if (KeyInfo.Key == ConsoleKey.Y) {
                     string extractPath = ((Environment.GetFolderPath(Environment.SpecialFolder.ProgramFiles).ToString()) + "\\Solaroid");
 
-                    ConsoleSpiner spin = new ConsoleSpiner();
+                    (new FileInfo(extractPath)).Directory.Create();
+                    Console.WriteLine("Created Path " + extractPath);
+
                     Console.WriteLine("");
-                    Console.WriteLine("Working.... ");
+                    Console.WriteLine("Downloading.... ");
 
                     using (var Client = new WebClient()) {
 
-                        try {
-                            Client.DownloadFile(
+                        Client.DownloadFile(
 
-                            new System.Uri("https://github.com/ice100k/Solaroid/raw/main/Solaroid.zip"),
+                        new System.Uri("https://github.com/ice100k/Solaroid/raw/main/Solaroid.zip"),
 
-                            extractPath
-                        );
-                        } catch (UnauthorizedAccessException) {
-                            Console.Write("UnAuthorizedAccessException: Unable to access file. ");
-                        }
+                        extractPath
+                    );
 
                         System.IO.Compression.ZipFile.ExtractToDirectory(extractPath + "\\Solaroid.zip", extractPath);
 
