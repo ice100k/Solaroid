@@ -1,0 +1,13 @@
+C:\Users\home\Documents\gabriel\Git\Solaroid\SolaroidInstaller\Solaroid\bin\Debug\netcoreapp3.1\Solaroid.exe
+C:\Users\home\Documents\gabriel\Git\Solaroid\SolaroidInstaller\Solaroid\bin\Debug\netcoreapp3.1\Solaroid.deps.json
+C:\Users\home\Documents\gabriel\Git\Solaroid\SolaroidInstaller\Solaroid\bin\Debug\netcoreapp3.1\Solaroid.runtimeconfig.json
+C:\Users\home\Documents\gabriel\Git\Solaroid\SolaroidInstaller\Solaroid\bin\Debug\netcoreapp3.1\Solaroid.runtimeconfig.dev.json
+C:\Users\home\Documents\gabriel\Git\Solaroid\SolaroidInstaller\Solaroid\bin\Debug\netcoreapp3.1\Solaroid.dll
+C:\Users\home\Documents\gabriel\Git\Solaroid\SolaroidInstaller\Solaroid\bin\Debug\netcoreapp3.1\Solaroid.pdb
+C:\Users\home\Documents\gabriel\Git\Solaroid\SolaroidInstaller\Solaroid\obj\Debug\netcoreapp3.1\Solaroid.csprojAssemblyReference.cache
+C:\Users\home\Documents\gabriel\Git\Solaroid\SolaroidInstaller\Solaroid\obj\Debug\netcoreapp3.1\Solaroid.AssemblyInfoInputs.cache
+C:\Users\home\Documents\gabriel\Git\Solaroid\SolaroidInstaller\Solaroid\obj\Debug\netcoreapp3.1\Solaroid.AssemblyInfo.cs
+C:\Users\home\Documents\gabriel\Git\Solaroid\SolaroidInstaller\Solaroid\obj\Debug\netcoreapp3.1\Solaroid.csproj.CoreCompileInputs.cache
+C:\Users\home\Documents\gabriel\Git\Solaroid\SolaroidInstaller\Solaroid\obj\Debug\netcoreapp3.1\Solaroid.dll
+C:\Users\home\Documents\gabriel\Git\Solaroid\SolaroidInstaller\Solaroid\obj\Debug\netcoreapp3.1\Solaroid.pdb
+C:\Users\home\Documents\gabriel\Git\Solaroid\SolaroidInstaller\Solaroid\obj\Debug\netcoreapp3.1\Solaroid.genruntimeconfig.cache
