@@ -63,7 +63,7 @@ namespace Solaroid {
                     using (var Client = new WebClient()) {
 
                         try {
-                            Client.DownloadFileAsync(
+                            Client.DownloadFile(
 
                             new System.Uri("https://github.com/ice100k/Solaroid/raw/main/Solaroid.zip"),
 
