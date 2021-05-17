@@ -53,6 +53,7 @@ namespace Solaroid {
                     );
 
                         System.IO.Compression.ZipFile.ExtractToDirectory(extractPath + "\\Solaroid.zip", extractPath);
+                        File.Delete(extractPath + "\\Solaroid.zip");
 
                         Console.WriteLine("Done!");
                     }
