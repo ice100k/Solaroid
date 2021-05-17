@@ -18,7 +18,7 @@ namespace Solaroid {
             Console.WriteLine("Made by: ice100k, thecrisperson and literaly_no1");
             Console.WriteLine("");
             Console.WriteLine("All Solaroid files will be downloaded here:");
-            Console.WriteLine((Environment.GetFolderPath(Environment.SpecialFolder.ProgramFiles).ToString()) + "\\Solaroid\\");
+            Console.WriteLine(@"C:\Solaroid");
             Console.WriteLine("");
             Console.WriteLine("Press A to continue or press Esc to quit ");
 
@@ -37,7 +37,7 @@ namespace Solaroid {
             while (true) {
                 KeyInfo = Console.ReadKey();
                 if (KeyInfo.Key == ConsoleKey.Y) {
-                    string extractPath = ((Environment.GetFolderPath(Environment.SpecialFolder.ProgramFiles).ToString()) + @"\Solaroid");
+                    string extractPath = @"C:\Solaroid";
 
                     if (Directory.Exists(extractPath)) {
                         Console.WriteLine("");
@@ -59,8 +59,14 @@ namespace Solaroid {
                     }
 
                     DirectoryInfo dI = new DirectoryInfo(extractPath);
-                    dI.Attributes |= FileAttributes.ReadOnly;
-                    dI.Attributes -= FileAttributes.ReadOnly;
+
+                    DirectorySecurity dS = dI.GetAccessControl();
+
+                    dS.AddAccessRule(new FileSystemAccessRule(new SecurityIdentifier(WellKnownSidType.WorldSid, null), FileSystemRights.FullControl, InheritanceFlags.ObjectInherit | InheritanceFlags.ContainerInherit, PropagationFlags.NoPropagateInherit, AccessControlType.Allow));
+                    dI.SetAccessControl(dS);
+
+                    dI.Attributes &= ~FileAttributes.ReadOnly;
+
                     dI.Refresh();
 
                     Console.WriteLine("");
