@@ -23,3 +23,11 @@ C:\Users\home\Documents\gabriel\Git\Solaroid\SolaroidInstillationFiles\Solaroid\
 C:\Users\home\Documents\gabriel\Git\Solaroid\SolaroidInstillationFiles\Solaroid\SolaroidInstaller\Solaroid\obj\Debug\netcoreapp3.1\Solaroid.dll
 C:\Users\home\Documents\gabriel\Git\Solaroid\SolaroidInstillationFiles\Solaroid\SolaroidInstaller\Solaroid\obj\Debug\netcoreapp3.1\Solaroid.pdb
 C:\Users\home\Documents\gabriel\Git\Solaroid\SolaroidInstillationFiles\Solaroid\SolaroidInstaller\Solaroid\obj\Debug\netcoreapp3.1\Solaroid.genruntimeconfig.cache
+C:\Users\home\Documents\gabriel\Git\Solaroid\SolaroidInstillationFiles\Solaroid\SolaroidInstaller\Solaroid\bin\Debug\netcoreapp3.1\System.IO.FileSystem.AccessControl.dll
+C:\Users\home\Documents\gabriel\Git\Solaroid\SolaroidInstillationFiles\Solaroid\SolaroidInstaller\Solaroid\bin\Debug\netcoreapp3.1\System.Security.AccessControl.dll
+C:\Users\home\Documents\gabriel\Git\Solaroid\SolaroidInstillationFiles\Solaroid\SolaroidInstaller\Solaroid\bin\Debug\netcoreapp3.1\System.Security.Principal.Windows.dll
+C:\Users\home\Documents\gabriel\Git\Solaroid\SolaroidInstillationFiles\Solaroid\SolaroidInstaller\Solaroid\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.IO.FileSystem.AccessControl.dll
+C:\Users\home\Documents\gabriel\Git\Solaroid\SolaroidInstillationFiles\Solaroid\SolaroidInstaller\Solaroid\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Security.AccessControl.dll
+C:\Users\home\Documents\gabriel\Git\Solaroid\SolaroidInstillationFiles\Solaroid\SolaroidInstaller\Solaroid\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\System.Security.Principal.Windows.dll
+C:\Users\home\Documents\gabriel\Git\Solaroid\SolaroidInstillationFiles\Solaroid\SolaroidInstaller\Solaroid\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\System.Security.Principal.Windows.dll
+C:\Users\home\Documents\gabriel\Git\Solaroid\SolaroidInstillationFiles\Solaroid\SolaroidInstaller\Solaroid\obj\Debug\netcoreapp3.1\Solaroid.csproj.CopyComplete
