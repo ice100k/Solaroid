@@ -37,7 +37,7 @@ namespace Solaroid {
                 if (KeyInfo.Key == ConsoleKey.Y) {
                     string extractPath = ((Environment.GetFolderPath(Environment.SpecialFolder.ProgramFiles).ToString()) + "\\Solaroid");
 
-                    (new FileInfo(extractPath)).Directory.Create();
+                    System.IO.Directory.CreateDirectory(extractPath);
                     Console.WriteLine("Created Path " + extractPath);
 
                     Console.WriteLine("");
