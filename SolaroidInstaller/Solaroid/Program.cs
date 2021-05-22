@@ -5,16 +5,19 @@ using System.IO;
 using System.Net;
 using System.Security.Principal;
 using System.Security.AccessControl;
+using IWshRuntimeLibrary;
+using System.Text;
 
 namespace Solaroid {
 
     internal class Program {
 
         private static void Main(string[] args) {
+
             Console.WriteLine("                  [SOLAROID]");
             Console.WriteLine("         The universe is in your hands");
             Console.WriteLine("");
-            Console.WriteLine("Welcome to the Solaroid Installer v1.0.1-BETA");
+            Console.WriteLine("Welcome to the Solaroid Installer v1.3.1-BETA");
             Console.WriteLine("Made by: ice100k, thecrisperson and literaly_no1");
             Console.WriteLine("");
             Console.WriteLine("All Solaroid files will be downloaded here:");
@@ -43,6 +46,26 @@ namespace Solaroid {
                 KeyInfo = Console.ReadKey();
                 if (KeyInfo.Key == ConsoleKey.Y) {
                     string extractPath = @"C:\Solaroid";
+
+                    if (System.IO.File.Exists(@"C:\Solaroid\meta.txt")) {
+
+                        StreamReader sr = System.IO.File.OpenText(@"C:\Solaroid\meta.txt");
+                        string V = sr.ReadLine();
+                        sr.Close();
+
+                        Console.WriteLine("");
+                        Console.WriteLine("Found Solaroid Version" + V);
+                        Console.WriteLine("Deleting current version...");
+
+                        System.IO.DirectoryInfo di = new DirectoryInfo(@"C:\Solaroid"); ;
+
+                        foreach (FileInfo file in di.GetFiles()) {
+                            file.Delete();
+                        }
+                        foreach (DirectoryInfo dir in di.GetDirectories()) {
+                            dir.Delete(true);
+                        }
+                    }
 
                     if (Directory.Exists(extractPath)) {
                         Console.WriteLine("");
@@ -118,8 +141,57 @@ namespace Solaroid {
                     Console.WriteLine("Unzipping Core...");
 
                     System.IO.Compression.ZipFile.ExtractToDirectory(tempPath + "\\Solaroid.zip", extractPath);
-                    File.Delete(tempPath + "\\Solaroid.zip");
+
+                    Console.WriteLine("");
+                    Console.WriteLine("Deleting Residue...");
+                    System.IO.File.Delete(tempPath + "\\Solaroid.zip");
                     Directory.Delete(tempPath);
+
+                    Console.WriteLine("");
+                    Console.WriteLine("Creating shortcuts...");
+                    string commonStartMenuPath = Environment.GetFolderPath(Environment.SpecialFolder.CommonStartMenu);
+                    string appStartMenuPath = Path.Combine(commonStartMenuPath, "Programs");
+                    string shortcutLocation = Path.Combine(appStartMenuPath, "Solaroid.lnk");
+
+                    if (!System.IO.File.Exists(shortcutLocation)) {
+
+                        WshShell shell = new WshShell();
+
+                        IWshShortcut shortcut = (IWshShortcut)shell.CreateShortcut(shortcutLocation);
+                        shortcut.Description = "Solaroid, The Universe is in your hands";
+                        shortcut.TargetPath = @"C:\Solaroid\Solaroid.exe";
+                        shortcut.Save();
+                    } else {
+                        Console.WriteLine("");
+                        Console.WriteLine("Start Menu Shortcut already exists. Skipping step...");
+                    }
+
+                    if (!System.IO.File.Exists(Environment.GetFolderPath(Environment.SpecialFolder.Desktop) + @"\Solaroid.lnk")) {
+                        Console.WriteLine("");
+                        Console.WriteLine("Create Desktop Shortucts? (Y/N)");
+
+                        while (true) {
+                            KeyInfo = Console.ReadKey();
+                            if (KeyInfo.Key == ConsoleKey.Y) {
+                                Console.WriteLine("");
+                                Console.WriteLine("Creating Desktop Shortcut...");
+                                WshShell shell = new WshShell();
+
+                                IWshShortcut shortcut = (IWshShortcut)shell.CreateShortcut(Environment.GetFolderPath(Environment.SpecialFolder.Desktop) + @"\Solaroid.lnk");
+                                shortcut.Description = "Solaroid, The Universe is in your hands";
+                                shortcut.TargetPath = @"C:\Solaroid\Solaroid.exe";
+                                shortcut.Save();
+                                break;
+                            }
+
+                            if (KeyInfo.Key == ConsoleKey.N)
+                                break;
+                        }
+
+                    } else {
+                        Console.WriteLine("");
+                        Console.WriteLine("Desktop Shortcut already exists. Skipping step...");
+                    }
 
                     Console.WriteLine("");
                     Console.WriteLine("Sucsessfully setup Core! Press Esc to exit!");
