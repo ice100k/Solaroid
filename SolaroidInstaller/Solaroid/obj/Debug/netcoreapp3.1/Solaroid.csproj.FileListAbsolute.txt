@@ -31,4 +31,3 @@ C:\Users\home\Documents\gabriel\Git\Solaroid\SolaroidInstillationFiles\Solaroid\
 C:\Users\home\Documents\gabriel\Git\Solaroid\SolaroidInstillationFiles\Solaroid\SolaroidInstaller\Solaroid\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\System.Security.Principal.Windows.dll
 C:\Users\home\Documents\gabriel\Git\Solaroid\SolaroidInstillationFiles\Solaroid\SolaroidInstaller\Solaroid\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\System.Security.Principal.Windows.dll
 C:\Users\home\Documents\gabriel\Git\Solaroid\SolaroidInstillationFiles\Solaroid\SolaroidInstaller\Solaroid\obj\Debug\netcoreapp3.1\Solaroid.csproj.CopyComplete
-C:\Users\home\Documents\gabriel\Git\Solaroid\SolaroidInstillationFiles\Solaroid\SolaroidInstaller\Solaroid\obj\Debug\netcoreapp3.1\Solaroid.csprojAssemblyReference.cache
