@@ -1,0 +1,2 @@
+C:\Users\home\Documents\gabriel\Git\Solaroid\SolaroidInstillationFiles\Solaroid\SolaroidInstaller\Solaroid\bin\SolaroidInstaller\Solaroid.pdb
+C:\Users\home\Documents\gabriel\Git\Solaroid\SolaroidInstillationFiles\Solaroid\SolaroidInstaller\Solaroid\bin\SolaroidInstaller\Solaroid.exe

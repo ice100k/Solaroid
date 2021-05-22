@@ -14,11 +14,16 @@ namespace Solaroid {
             Console.WriteLine("                  [SOLAROID]");
             Console.WriteLine("         The universe is in your hands");
             Console.WriteLine("");
-            Console.WriteLine("Welcome to the Solaroid Installer v0.0.1-ALPHA");
+            Console.WriteLine("Welcome to the Solaroid Installer v1.0.1-BETA");
             Console.WriteLine("Made by: ice100k, thecrisperson and literaly_no1");
             Console.WriteLine("");
             Console.WriteLine("All Solaroid files will be downloaded here:");
             Console.WriteLine(@"C:\Solaroid");
+            Console.WriteLine("");
+            Console.WriteLine(".NET 5.0+ required");
+            Console.WriteLine("Currently running version: {0}", Environment.Version.ToString());
+            Console.WriteLine("");
+            Console.WriteLine("If the versions dont match you can download .NET 5.0 here: https://download.visualstudio.microsoft.com/download/pr/2892493e-df43-409e-af68-8b14aa75c029/53156c889fc08f01b7ed8d7135badede/dotnet-sdk-5.0.100-win-x64.exe");
             Console.WriteLine("");
             Console.WriteLine("Press A to continue or press Esc to quit ");
 
@@ -46,7 +51,7 @@ namespace Solaroid {
                         try {
                             Console.WriteLine("");
                             DirectoryInfo dInfo = Directory.CreateDirectory(extractPath);
-                            Console.WriteLine("Directory {0} was created sucessfully at: ", Directory.GetCreationTime(extractPath));
+                            Console.WriteLine("Directory C:\\Solaroid\\ was created sucessfully at: {0}", Directory.GetCreationTime(extractPath));
 
                             DirectorySecurity dSecurity = dInfo.GetAccessControl();
 

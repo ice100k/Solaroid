@@ -1,0 +1,16 @@
+C:\Users\home\Documents\gabriel\Git\Solaroid\SolaroidInstillationFiles\Solaroid\SolaroidInstaller\Solaroid\bin\Release\net5.0\win-x64\Solaroid.exe
+C:\Users\home\Documents\gabriel\Git\Solaroid\SolaroidInstillationFiles\Solaroid\SolaroidInstaller\Solaroid\bin\Release\net5.0\win-x64\Solaroid.deps.json
+C:\Users\home\Documents\gabriel\Git\Solaroid\SolaroidInstillationFiles\Solaroid\SolaroidInstaller\Solaroid\bin\Release\net5.0\win-x64\Solaroid.runtimeconfig.json
+C:\Users\home\Documents\gabriel\Git\Solaroid\SolaroidInstillationFiles\Solaroid\SolaroidInstaller\Solaroid\bin\Release\net5.0\win-x64\Solaroid.runtimeconfig.dev.json
+C:\Users\home\Documents\gabriel\Git\Solaroid\SolaroidInstillationFiles\Solaroid\SolaroidInstaller\Solaroid\bin\Release\net5.0\win-x64\Solaroid.dll
+C:\Users\home\Documents\gabriel\Git\Solaroid\SolaroidInstillationFiles\Solaroid\SolaroidInstaller\Solaroid\bin\Release\net5.0\win-x64\ref\Solaroid.dll
+C:\Users\home\Documents\gabriel\Git\Solaroid\SolaroidInstillationFiles\Solaroid\SolaroidInstaller\Solaroid\bin\Release\net5.0\win-x64\Solaroid.pdb
+C:\Users\home\Documents\gabriel\Git\Solaroid\SolaroidInstillationFiles\Solaroid\SolaroidInstaller\Solaroid\obj\Release\net5.0\win-x64\Solaroid.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\home\Documents\gabriel\Git\Solaroid\SolaroidInstillationFiles\Solaroid\SolaroidInstaller\Solaroid\obj\Release\net5.0\win-x64\Solaroid.AssemblyInfoInputs.cache
+C:\Users\home\Documents\gabriel\Git\Solaroid\SolaroidInstillationFiles\Solaroid\SolaroidInstaller\Solaroid\obj\Release\net5.0\win-x64\Solaroid.AssemblyInfo.cs
+C:\Users\home\Documents\gabriel\Git\Solaroid\SolaroidInstillationFiles\Solaroid\SolaroidInstaller\Solaroid\obj\Release\net5.0\win-x64\Solaroid.csproj.CoreCompileInputs.cache
+C:\Users\home\Documents\gabriel\Git\Solaroid\SolaroidInstillationFiles\Solaroid\SolaroidInstaller\Solaroid\obj\Release\net5.0\win-x64\Solaroid.dll
+C:\Users\home\Documents\gabriel\Git\Solaroid\SolaroidInstillationFiles\Solaroid\SolaroidInstaller\Solaroid\obj\Release\net5.0\win-x64\ref\Solaroid.dll
+C:\Users\home\Documents\gabriel\Git\Solaroid\SolaroidInstillationFiles\Solaroid\SolaroidInstaller\Solaroid\obj\Release\net5.0\win-x64\Solaroid.pdb
+C:\Users\home\Documents\gabriel\Git\Solaroid\SolaroidInstillationFiles\Solaroid\SolaroidInstaller\Solaroid\obj\Release\net5.0\win-x64\Solaroid.genruntimeconfig.cache
+C:\Users\home\Documents\gabriel\Git\Solaroid\SolaroidInstillationFiles\Solaroid\SolaroidInstaller\Solaroid\obj\Release\net5.0\win-x64\Solaroid.csprojAssemblyReference.cache

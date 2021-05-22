@@ -1,13 +1,16 @@
 {
   "version": 2,
-  "dgSpecHash": "8HcwJgPpo0Sh6F29YNWduebHJ498RkVY8P3gY61vmIY6gSk0R1P4FNKDPEtPgbnICEanmvdkUn8F0hpoiKF94g==",
+  "dgSpecHash": "KN5kZZC3V8CjDbun3zcrAhjCdEBL6x2KPJWeZPB/i2idDdoU3F8bf4XLq7c11NlZwoXlkGiY4dzZ95Ca7FGyQw==",
   "success": true,
   "projectFilePath": "C:\\Users\\home\\Documents\\gabriel\\Git\\Solaroid\\SolaroidInstillationFiles\\Solaroid\\SolaroidInstaller\\Solaroid\\Solaroid.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\home\\.nuget\\packages\\microsoft.netcore.platforms\\5.0.0\\microsoft.netcore.platforms.5.0.0.nupkg.sha512",
     "C:\\Users\\home\\.nuget\\packages\\system.io.filesystem.accesscontrol\\5.0.0\\system.io.filesystem.accesscontrol.5.0.0.nupkg.sha512",
     "C:\\Users\\home\\.nuget\\packages\\system.security.accesscontrol\\5.0.0\\system.security.accesscontrol.5.0.0.nupkg.sha512",
-    "C:\\Users\\home\\.nuget\\packages\\system.security.principal.windows\\5.0.0\\system.security.principal.windows.5.0.0.nupkg.sha512"
+    "C:\\Users\\home\\.nuget\\packages\\system.security.principal.windows\\5.0.0\\system.security.principal.windows.5.0.0.nupkg.sha512",
+    "C:\\Users\\home\\.nuget\\packages\\microsoft.netcore.app.runtime.win-x64\\5.0.6\\microsoft.netcore.app.runtime.win-x64.5.0.6.nupkg.sha512",
+    "C:\\Users\\home\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.win-x64\\5.0.6\\microsoft.aspnetcore.app.runtime.win-x64.5.0.6.nupkg.sha512",
+    "C:\\Users\\home\\.nuget\\packages\\microsoft.windowsdesktop.app.runtime.win-x64\\5.0.6\\microsoft.windowsdesktop.app.runtime.win-x64.5.0.6.nupkg.sha512"
   ],
   "logs": []
 }

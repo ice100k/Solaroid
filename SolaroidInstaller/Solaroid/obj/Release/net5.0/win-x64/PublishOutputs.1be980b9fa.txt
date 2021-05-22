@@ -1,0 +1,6 @@
+C:\Users\home\Documents\gabriel\Git\Solaroid\SolaroidInstillationFiles\Solaroid\SolaroidInstaller\Solaroid\bin\Release\net5.0\win-x64\publish\Solaroid.pdb
+C:\Users\home\Documents\gabriel\Git\Solaroid\SolaroidInstillationFiles\Solaroid\SolaroidInstaller\Solaroid\bin\Release\net5.0\win-x64\publish\clrcompression.dll
+C:\Users\home\Documents\gabriel\Git\Solaroid\SolaroidInstillationFiles\Solaroid\SolaroidInstaller\Solaroid\bin\Release\net5.0\win-x64\publish\clrjit.dll
+C:\Users\home\Documents\gabriel\Git\Solaroid\SolaroidInstillationFiles\Solaroid\SolaroidInstaller\Solaroid\bin\Release\net5.0\win-x64\publish\coreclr.dll
+C:\Users\home\Documents\gabriel\Git\Solaroid\SolaroidInstillationFiles\Solaroid\SolaroidInstaller\Solaroid\bin\Release\net5.0\win-x64\publish\mscordaccore.dll
+C:\Users\home\Documents\gabriel\Git\Solaroid\SolaroidInstillationFiles\Solaroid\SolaroidInstaller\Solaroid\bin\Release\net5.0\win-x64\publish\Solaroid.exe
