@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "KN5kZZC3V8CjDbun3zcrAhjCdEBL6x2KPJWeZPB/i2idDdoU3F8bf4XLq7c11NlZwoXlkGiY4dzZ95Ca7FGyQw==",
+  "dgSpecHash": "zg05i/JGz3UtpasxeigwuIo46j1TcCKLret0WuhiPsuYAtR+P8G3HrzozYSTfEQW2o+aaeqDHjcF15VMw8FW1A==",
   "success": true,
   "projectFilePath": "C:\\Users\\home\\Documents\\gabriel\\Git\\Solaroid\\SolaroidInstillationFiles\\Solaroid\\SolaroidInstaller\\Solaroid\\Solaroid.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\home\\.nuget\\packages\\microsoft.netcore.platforms\\5.0.0\\microsoft.netcore.platforms.5.0.0.nupkg.sha512",
+    "C:\\Users\\home\\.nuget\\packages\\microsoft.win32.registry\\5.0.0\\microsoft.win32.registry.5.0.0.nupkg.sha512",
     "C:\\Users\\home\\.nuget\\packages\\system.io.filesystem.accesscontrol\\5.0.0\\system.io.filesystem.accesscontrol.5.0.0.nupkg.sha512",
     "C:\\Users\\home\\.nuget\\packages\\system.security.accesscontrol\\5.0.0\\system.security.accesscontrol.5.0.0.nupkg.sha512",
     "C:\\Users\\home\\.nuget\\packages\\system.security.principal.windows\\5.0.0\\system.security.principal.windows.5.0.0.nupkg.sha512",

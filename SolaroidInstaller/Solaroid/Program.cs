@@ -2,11 +2,10 @@
 //By ice100k and thecrisperson, Lore by Literally_no1
 using System;
 using System.IO;
-using System.Net;
 using System.Security.Principal;
 using System.Security.AccessControl;
 using IWshRuntimeLibrary;
-using System.Text;
+using Microsoft.Win32;
 
 namespace Solaroid {
 
@@ -17,7 +16,7 @@ namespace Solaroid {
             Console.WriteLine("                  [SOLAROID]");
             Console.WriteLine("         The universe is in your hands");
             Console.WriteLine("");
-            Console.WriteLine("Welcome to the Solaroid Installer v1.3.1-BETA");
+            Console.WriteLine("Welcome to the Solaroid Installer v1.4.1-BETA");
             Console.WriteLine("Made by: ice100k, thecrisperson and literaly_no1");
             Console.WriteLine("");
             Console.WriteLine("All Solaroid files will be downloaded here:");
@@ -194,19 +193,72 @@ namespace Solaroid {
                     }
 
                     Console.WriteLine("");
-                    Console.WriteLine("Sucsessfully setup Core! Press Esc to exit!");
-
-                    while (true) {
-                        KeyInfo = Console.ReadKey();
-                        if (KeyInfo.Key == ConsoleKey.Escape)
-                            Environment.Exit(0);
-                    }
-
+                    Console.WriteLine("Sucsessfully setup Core!");
+                    break;
                 }
 
                 if (KeyInfo.Key == ConsoleKey.N)
                     break;
 
+            }
+
+            Console.WriteLine("");
+            Console.WriteLine("Setup Multiplayer Compatibility? (Y/N) ");
+
+            while (true) {
+                KeyInfo = Console.ReadKey();
+                if (KeyInfo.Key == ConsoleKey.Y) {
+
+                    Console.WriteLine("");
+                    Console.WriteLine("Locating Solaroid...");
+
+                    if (System.IO.File.Exists(@"C:\Solaroid\meta.txt")) {
+
+                        StreamReader sr = System.IO.File.OpenText(@"C:\Solaroid\meta.txt");
+                        string V = sr.ReadLine();
+                        sr.Close();
+
+                        Console.WriteLine("");
+                        Console.WriteLine("Found Solaroid Version" + V);
+                    } else {
+                        Console.WriteLine("");
+                        Console.WriteLine("Solaroid not found. Press Esc to exit.");
+
+                        while (true) {
+                            KeyInfo = Console.ReadKey();
+                            if (KeyInfo.Key == ConsoleKey.Escape)
+                                Environment.Exit(0);
+                        }
+
+                    }
+
+                    Console.WriteLine("");
+                    Console.WriteLine("Creating custom protocol...");
+
+                    Console.WriteLine("");
+                    Console.WriteLine("Editing resistry values...");
+
+                    Registry.SetValue(@"HKEY_CLASSES_ROOT\solaroid", "URL protocol", "");
+                    string solaroidpath = "\"C:\\Solaroid\\Solaroid.exe\" \" %1\"";
+                    Registry.SetValue(@"HKEY_CLASSES_ROOT\solaroid\shell\open\command", "", solaroidpath, RegistryValueKind.Unknown);
+
+                    Console.WriteLine("");
+                    Console.WriteLine("Sucsefully setup multiplayer!");
+                    break;
+
+                }
+
+                if (KeyInfo.Key == ConsoleKey.N)
+                    break;
+            }
+
+            Console.WriteLine("");
+            Console.WriteLine("Setup Complete! Pres Esc to exit!");
+
+            while (true) {
+                KeyInfo = Console.ReadKey();
+                if (KeyInfo.Key == ConsoleKey.Escape)
+                    Environment.Exit(0);
             }
 
         }
